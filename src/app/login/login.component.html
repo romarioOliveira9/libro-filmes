@@ -1,0 +1,24 @@
+<div class="login-container">
+    <img class="film" src="assets/images/film.png" alt="">
+    <div class="logo">Libro Filmes</div>
+    <div class="desc">
+        A Libro Filmes é o recurso de recomendação para qualquer cinéfilo que busque um bom entretenimento de qualidade.
+        Com uma boa grade online de filmes e programas de TV e um espaço para comentários, nesse ambiente temos um guia
+        completo para sua avaliação. Seja você um grande ã de filmes ou não, nesse espaço entretenimento procuramos uma
+        opinião pessoal e também para compartilhar sua opinião com seus amigos, Você esta no lugar certo.
+    </div>
+    <div class="login-form">
+        <div class="form-group">
+            <label for="uname">Nome</label>
+            <input type="text" name="uname" class="form-control" [(ngModel)]="username" />
+        </div>
+        <div class="form-group">
+            <label for="pword">Senha</label>
+            <input type="password" name="pword" class="form-control" [(ngModel)]="password" />
+        </div>
+        <div class="btn-container">
+            <div class="error">{{ errorMsg }}</div>
+            <button class="btn btn-dark" (click)="login()">Login</button>
+        </div>
+    </div>
+</div>
